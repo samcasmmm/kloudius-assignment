@@ -71,3 +71,14 @@ From the terminal, you can:
 ## License
 
 This project is licensed under the MIT License.
+
+`Login`
+<img width="610" height="1356" alt="image" src="https://github.com/user-attachments/assets/bd1800ae-a0e1-4c79-bcd1-6ba6690d6877" />
+
+`SignUp`
+<img width="610" height="1356" alt="image" src="https://github.com/user-attachments/assets/66a62c8a-f269-49e6-9d81-cc7acff4dcd6" />
+<img width="610" height="1356" alt="image" src="https://github.com/user-attachments/assets/c386c10e-c87f-476c-bc54-27fe00dd32e0" />
+
+`Home`
+<img width="610" height="1356" alt="image" src="https://github.com/user-attachments/assets/63cfacac-f7a4-44f9-a104-51445d99a36b" />
+
