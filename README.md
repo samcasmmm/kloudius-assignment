@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# Kloudius Assignment
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application built with Expo and Expo Router, featuring a custom authentication system.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Authentication**: Custom AuthContext with Login, Signup, and Logout functionality.
+- **Navigation**: File-based routing using Expo Router.
+- **Styling**: Native components with persistent layouts.
+- **Theme Support**: Integrated with Expo's status bar and system UI.
 
+## Technology Stack
+
+- **Framework**: [Expo](https://expo.dev/)
+- **State Management**: React Context API (AuthContext)
+- **Navigation**: [Expo Router](https://docs.expo.dev/router/introduction/)
+- **Icons**: [@expo/vector-icons](https://docs.expo.dev/guides/icons/)
+- **Storage**: [AsyncStorage](https://react-native-async-storage.github.io/async-storage/)
+
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS version recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Expo Go](https://expo.dev/client) app on your mobile device (to test on physical hardware)
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone <repository-url>
+   cd kloudius-assignment
+   ```
+
+2. Install dependencies:
    ```bash
    npm install
    ```
 
-2. Start the app
+### Running the App
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Start the development server:
 
 ```bash
-npm run reset-project
+npm start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+From the terminal, you can:
 
-## Learn more
+- Press **`a`** to open on Android.
+- Press **`i`** to open on iOS.
+- Press **`w`** to open on web.
+- Scan the QR code with **Expo Go** to open on your phone.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Project Structure
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- `app/`: Contains the application routes (Expo Router).
+  - `index.tsx`: Loading/Redirect logic.
+  - `login.tsx` & `signup.tsx`: Authentication screens.
+  - `home.tsx`: Main dashboard screen.
+  - `modal.tsx`: Informational modal.
+  - `_layout.tsx`: Root layout with `AuthProvider`.
+- `context/`: Global state management (`AuthContext.tsx`).
+- `components/`: Reusable UI components and theme-aware views.
+- `constants/`: Application constants and color schemes.
+- `hooks/`: Custom React hooks (e.g., `useColorScheme`).
+- `assets/`: Static assets like images and fonts.
 
-## Join the community
+## License
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+This project is licensed under the MIT License.
